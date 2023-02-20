@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32630.192
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VIN_LIB.dll", "VIN_LIB\VIN_LIB.dll.csproj", "{265C2147-CC39-400F-B86E-2DD9DD1707E4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestProject1", "UnitTestProject1\UnitTestProject1.csproj", "{BDCD5941-29A8-4E26-93BB-ACB347019507}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{265C2147-CC39-400F-B86E-2DD9DD1707E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{265C2147-CC39-400F-B86E-2DD9DD1707E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{265C2147-CC39-400F-B86E-2DD9DD1707E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{265C2147-CC39-400F-B86E-2DD9DD1707E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BDCD5941-29A8-4E26-93BB-ACB347019507}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDCD5941-29A8-4E26-93BB-ACB347019507}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDCD5941-29A8-4E26-93BB-ACB347019507}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDCD5941-29A8-4E26-93BB-ACB347019507}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {90B42B5A-9B78-45ED-8F97-73CEC0362771}
+	EndGlobalSection
+EndGlobal

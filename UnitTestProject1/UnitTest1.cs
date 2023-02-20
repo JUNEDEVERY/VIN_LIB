@@ -130,7 +130,7 @@ namespace UnitTestProject1
         [TestMethod]
         public void TestMethod_VINCHECKCOUNTRY_True()
         {
-            // проверка на то, что если мы добавим букву о - , а буква о нельзя использовать, то такой страны не будет
+            // проверка на то, что если мы добавим букву о на второе место, а букву о нельзя использовать, то такой страны не будет
             string vin = "2O4GJ453XYR693697";
             string actual = VIN.GetVINCountry(vin);
             Assert.AreEqual(actual, null);
@@ -149,9 +149,9 @@ namespace UnitTestProject1
         }
 
         [TestMethod]
-        public void TestMethod_VINCHECKCOUNTRY_OKEANIA_FALSE()
+        public void TestMethod_VINCHECKCOUNTRY_EUROPE_FALSE()
         {
-            // проверка на то, что наш вин не относится к континенту океании
+            // проверка на то, что наш вин не относится к континенту европа
             string vin = "7C4GJ453XYR693697";
             string except = VIN.GetVINCountry(vin);
             Assert.AreNotEqual(except, "Европа");
@@ -161,7 +161,7 @@ namespace UnitTestProject1
 
 
         [TestMethod]
-        public void TestMethod_VINCHECKCOUNTRY_OKEANIA123()
+        public void TestMethod_VINCHECKCOUNTRY_OKEANIA_IsTrue()
         {
             // проверка на то, что наш вин дает тру при том, когда вин == континенту
             string vin = "7C4GJ453XYR693697";
@@ -181,9 +181,9 @@ namespace UnitTestProject1
 
         // сложные
         [TestMethod]
-        public void TestMethod_VINCOUNTRY_OKEANIA_FALSE()
+        public void TestMethod_VINCOUNTRY_IsAbsent()
         {
-            // проверка на то, что наш вин  дает FALSE при том, когда вин != континенту
+            // проверка на то, что наш вин  дает null при том, когда вин не существует и такая страна не определяется
             string vin = "qw]djaw9odhwqidhqwdhqw[d0qwhd098qw3hbdbqwdbwq9dbqw";
             string except = VIN.GetVINCountry(vin);
             Assert.IsNull(except);
